@@ -35,9 +35,9 @@ In this notebook, we use crime data from the City of Cincinnati, May 2019 to Apr
 Source: https://dev.socrata.com/foundry/data.cincinnati-oh.gov/k59e-2pvf
 
 ```{r, cache = TRUE}
-cincinnati <- read.socrata("https://data.cincinnati-oh.gov/resource/k59e-2pvf.json?$where=date_reported between '2019-05-01' and '2020-04-30'")
+#cincinnati <- read.socrata("https://data.cincinnati-oh.gov/resource/k59e-2pvf.json?$where=date_reported between '2019-05-01' and '2020-04-30'")
 
-#load("cincinnati_full.RData")
+load("cincinnati_full.RData")
 
 cincinnati %<>%
   mutate(
